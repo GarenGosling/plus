@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author : Garen Gosling 2020/5/23 下午12:13
  */
-public class DplServiceImpl<PK, E> implements IDplService<PK, E> {
+public class BaseDaoImpl<PK, E> implements IBaseDao<PK, E> {
 
     private DplPlus dplPlus = new DplPlus();
 

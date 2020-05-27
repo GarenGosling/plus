@@ -122,7 +122,7 @@ Berkeley DB java api 有3种使用方式：1、DPL 2、基础API 3、Collections
         
 ##### 5、业务层接口（需要继承 dplPlus 的父接口 IDplService<PK, E>）
     import ogd.berkeleyDB.easyDPL.entity.AiApp;
-    import org.garen.plus.dplPlus.IDplService;
+    import org.garen.plus.dplPlus.IBaseDao;
     
     /**
      * <p>
@@ -138,7 +138,7 @@ Berkeley DB java api 有3种使用方式：1、DPL 2、基础API 3、Collections
 ##### 6、业务层实现类（需要继承 dplPlus 的基类 DplServiceImpl<PK, E>）
     import ogd.berkeleyDB.easyDPL.entity.AiApp;
     import ogd.berkeleyDB.easyDPL.service.IAiAppService;
-    import org.garen.plus.dplPlus.DplServiceImpl;
+    import org.garen.plus.dplPlus.BaseDaoImpl;
     import org.springframework.stereotype.Component;
     
     /**
@@ -229,7 +229,7 @@ Berkeley DB java api 有3种使用方式：1、DPL 2、基础API 3、Collections
     }
 ##### Service  
     import ogd.berkeleyDB.easyDPL.entity.Engine;
-    import org.garen.plus.dplPlus.IDplService;
+    import org.garen.plus.dplPlus.IBaseDao;
     
     import java.util.List;
     
@@ -258,7 +258,7 @@ Berkeley DB java api 有3种使用方式：1、DPL 2、基础API 3、Collections
     import com.sleepycat.persist.SecondaryIndex;
     import ogd.berkeleyDB.easyDPL.entity.Engine;
     import ogd.berkeleyDB.easyDPL.service.IEngineService;
-    import org.garen.plus.dplPlus.DplServiceImpl;
+    import org.garen.plus.dplPlus.BaseDaoImpl;
     import org.garen.plus.dplPlus.Param;
     import org.springframework.stereotype.Component;
     import org.springframework.util.StringUtils;

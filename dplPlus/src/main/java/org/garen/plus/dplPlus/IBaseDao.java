@@ -4,12 +4,12 @@ import java.util.List;
 
 /**
  * <p>
- * 功能描述 : 描述
+ * 功能描述 : 数据库映射父接口
  * </p>
  *
  * @author : Garen Gosling 2020/5/25 上午9:55
  */
-public interface IDplService<PK, E> {
+public interface IBaseDao<PK, E> {
     /**
      * <p>
      * 功能描述 : 新增
