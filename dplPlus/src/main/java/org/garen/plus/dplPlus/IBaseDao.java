@@ -88,6 +88,18 @@ public interface IBaseDao<PK, E> {
 
     /**
      * <p>
+     * 功能描述 : 参数查询
+     * </p>
+     *
+     * @author : Garen Gosling   2020/5/28 下午2:24
+     *
+     * @param iParamsHandler 提供参数列表的接口
+     * @Return java.util.List<E>
+     **/
+    List<E> listByParams(IParamsHandler iParamsHandler);
+
+    /**
+     * <p>
      * 功能描述 : 分页查询
      * </p>
      *
